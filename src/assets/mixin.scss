@@ -1,0 +1,9 @@
+@mixin clickArea {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+  }
+}

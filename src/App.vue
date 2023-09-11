@@ -1,28 +1,42 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
-//import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+
+
 </script>
 
 <template>
-<!--  <header>-->
-<!--    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
+  <header class="header">
 
-<!--    <div class="wrapper">-->
-<!--      <HelloWorld msg="You did it!" />-->
+    <RouterLink to="/">
+      <img alt="Vue logo" class="logo" src="@/assets/logoipsum-220.svg"/>
+    </RouterLink>
 
-<!--      <nav>-->
-<!--        <RouterLink to="/">Home</RouterLink>-->
-<!--        <RouterLink to="/about">About</RouterLink>-->
-<!--      </nav>-->
-<!--    </div>-->
-<!--  </header>-->
+    <div class="wrapper">
+      <nav>
+        <RouterLink class="header__link" to="/">Home</RouterLink>
+        <RouterLink class="header__link" to="/about">About</RouterLink>
+        <RouterLink class="header__link" to="/404">Empty page</RouterLink>
+      </nav>
+    </div>
 
-<!--  <RouterView />-->
-
-
+  </header>
+  <RouterView />
 
 </template>
 
 <style scoped lang="scss">
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+    &__link {
+      //@include clickArea;
+    }
+  }
 
 </style>
