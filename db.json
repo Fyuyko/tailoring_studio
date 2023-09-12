@@ -1,0 +1,30 @@
+{
+  "owner": {
+    "name": "Елена",
+    "status": "Хозяйка"
+  },
+  "personal": {
+    "seamstresses": [
+      {
+        "id": 165,
+        "name": "Наталья"
+      },
+      {
+        "id": 166,
+        "name": "Екатерина"
+      }
+    ],
+    "fashionConstructor": [
+      {
+        "id": 452,
+        "name": "Валерия"
+      }
+    ],
+    "cutters": [
+      {
+        "id": 854,
+        "name": "Мария"
+      }
+    ]
+  }
+}
